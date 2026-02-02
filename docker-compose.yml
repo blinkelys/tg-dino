@@ -7,4 +7,3 @@ services:
     volumes:
       - ./public:/usr/share/nginx/html/public:ro
       - ./style.css:/usr/share/nginx/html/style.css:ro
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
