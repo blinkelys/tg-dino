@@ -11,7 +11,31 @@
     </head>
     <body>
         <div class="container">
-            <img class="dino" src="./public/dino.jpg" alt="A picture from The Gathering.">
+            <div class="switcher">
+                <button id="switcher" onclick="toggleColor()">
+                    Toggle Dark Mode
+                </button>
+            </div>
+            <img class="dino" id="dino" src="./public/dino.jpg" alt="A picture from The Gathering.">
         </div>
+
+        <script>
+            const dinoImg = document.getElementById("dino");
+            const switcher = document.getElementById("switcher");
+
+            let isDark = false;
+
+            function toggleColor() {
+                if (isDark == false) {
+                    dinoImg.src = "./public/dark-dino.jpg";
+                    isDark = true;
+                    switcher.classList.add("white-bg")
+                } else {
+                    dinoImg.src = "./public/dino.jpg";
+                    isDark = false;
+                    switcher.classList.remove("white-bg")
+                }
+            }
+        </script>
     </body>
 </html>

@@ -16,3 +16,22 @@ html, body {
     height: auto;
     max-height: 100vh;
 }
+
+.switcher {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.white-bg {
+    background-color: #fff;
+    color: #000;
+}
